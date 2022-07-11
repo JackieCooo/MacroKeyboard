@@ -1,0 +1,9 @@
+# ninja log v5
+18	254	6792284797601760	KeyboardFactory_autogen/timestamp	5892339b39d565e3
+260	329	6792284798351834	CMakeFiles/KeyboardFactory.dir/KeyboardFactory_autogen/mocs_compilation.cpp.obj	eb67d33c6194377f
+3555	3974	6792284832460655	KeyboardFactory.exe	5fd102424d854e07
+18	254	6792284797601760	KeyboardFactory_autogen/mocs_compilation.cpp	5892339b39d565e3
+18	254	6792284797601760	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/mocs_compilation.cpp	5892339b39d565e3
+268	3177	6792284826823964	CMakeFiles/KeyboardFactory.dir/Components/Src/MainWindow.cpp.obj	3b4abf8fe5528670
+18	254	6792284797601760	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/timestamp	5892339b39d565e3
+264	3555	6792284830594250	CMakeFiles/KeyboardFactory.dir/main.cpp.obj	61a207ac17e2952b
