@@ -235,21 +235,57 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/Components/Inc/MainWindow.h",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/InfoPanel.h",
 			"MU",
-			"MYLUWHQWNL/moc_MainWindow.cpp",
+			"6HJHM45RNC/moc_InfoPanel.cpp",
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/Components/Inc/TabWidget.h",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/InfoTab.h",
 			"MU",
-			"MYLUWHQWNL/moc_TabWidget.cpp",
+			"6HJHM45RNC/moc_InfoTab.cpp",
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/Components/Inc/TopPanel.h",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/MainWindow.h",
 			"MU",
-			"MYLUWHQWNL/moc_TopPanel.cpp",
+			"6HJHM45RNC/moc_MainWindow.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/SettingTab.h",
+			"MU",
+			"6HJHM45RNC/moc_SettingTab.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TabWidget.h",
+			"MU",
+			"6HJHM45RNC/moc_TabWidget.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TestTab.h",
+			"MU",
+			"6HJHM45RNC/moc_TestTab.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TopPanel.h",
+			"MU",
+			"6HJHM45RNC/moc_TopPanel.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TransferTab.h",
+			"MU",
+			"6HJHM45RNC/moc_TransferTab.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/SoundService.h",
+			"MU",
+			"WNY2YJVFSI/moc_SoundService.cpp",
 			null
 		]
 	],
@@ -278,7 +314,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/Components/Inc",
+		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc",
+		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc",
 		"C:/Qt/6.3.1/mingw_64/include/QtCore",
 		"C:/Qt/6.3.1/mingw_64/include",
 		"C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++",
@@ -324,22 +361,52 @@
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/Components/Src/MainWindow.cpp",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/InfoPanel.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/Components/Src/TabWidget.cpp",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/InfoTab.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/Components/Src/TopPanel.cpp",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/MainWindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/SettingTab.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TabWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TestTab.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TopPanel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TransferTab.cpp",
 			"MU",
 			null
 		],
 		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/SoundService.cpp",
 			"MU",
 			null
 		]

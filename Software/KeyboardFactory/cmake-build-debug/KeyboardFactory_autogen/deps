@@ -120,11 +120,25 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Qt/6.3.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
 	C:/Qt/6.3.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/CMakeLists.txt \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/Components/Inc/MainWindow.h \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/Components/Src/MainWindow.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/CMakeFiles/3.22.3/CMakeRCCompiler.cmake \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/InfoPanel.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/InfoTab.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/MainWindow.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/SettingTab.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TabWidget.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TestTab.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TopPanel.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TransferTab.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/InfoPanel.cpp \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/InfoTab.cpp \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/MainWindow.cpp \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/SettingTab.cpp \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TabWidget.cpp \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TestTab.cpp \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TopPanel.cpp \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TransferTab.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/main.cpp \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/cmake/win/bin/cmake.exe

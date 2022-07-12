@@ -120,11 +120,25 @@ KeyboardFactory_autogen/timestamp: \
   C:/Qt/6.3.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
   C:/Qt/6.3.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
   ../CMakeLists.txt \
-  ../Components/Inc/MainWindow.h \
-  ../Components/Src/MainWindow.cpp \
   CMakeFiles/3.22.3/CMakeCCompiler.cmake \
   CMakeFiles/3.22.3/CMakeCXXCompiler.cmake \
   CMakeFiles/3.22.3/CMakeRCCompiler.cmake \
   CMakeFiles/3.22.3/CMakeSystem.cmake \
+  ../components/inc/InfoPanel.h \
+  ../components/inc/InfoTab.h \
+  ../components/inc/MainWindow.h \
+  ../components/inc/SettingTab.h \
+  ../components/inc/TabWidget.h \
+  ../components/inc/TestTab.h \
+  ../components/inc/TopPanel.h \
+  ../components/inc/TransferTab.h \
+  ../components/src/InfoPanel.cpp \
+  ../components/src/InfoTab.cpp \
+  ../components/src/MainWindow.cpp \
+  ../components/src/SettingTab.cpp \
+  ../components/src/TabWidget.cpp \
+  ../components/src/TestTab.cpp \
+  ../components/src/TopPanel.cpp \
+  ../components/src/TransferTab.cpp \
   ../main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/cmake/win/bin/cmake.exe

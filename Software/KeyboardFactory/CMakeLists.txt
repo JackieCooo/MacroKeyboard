@@ -14,10 +14,13 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-include_directories(./Components/Inc)
+include_directories(
+        components/inc
+        service/inc
+)
 
-file(GLOB MAIN_INC ./Components/Inc/*.h)
-file(GLOB MAIN_SRC ./Components/Src/*.cpp)
+file(GLOB MAIN_INC components/inc/*.h service/inc/*.h)
+file(GLOB MAIN_SRC components/src/*.cpp service/src/*.cpp)
 
 add_executable(KeyboardFactory main.cpp ${MAIN_INC} ${MAIN_SRC})
 target_link_libraries(KeyboardFactory
