@@ -20,5 +20,6 @@ void TopPanel::setupUI() {
     deviceList = new QComboBox(this);
     deviceList->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
     deviceList->setObjectName("DeviceList");
+
     hLayout->addWidget(deviceList);
 }

@@ -53,7 +53,7 @@ build CMakeFiles/KeyboardFactory.dir/KeyboardFactory_autogen/mocs_compilation.cp
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\KeyboardFactory_autogen\mocs_compilation.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\KeyboardFactory_autogen
 
@@ -61,7 +61,7 @@ build CMakeFiles/KeyboardFactory.dir/main.cpp.obj: CXX_COMPILER__KeyboardFactory
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir
 
@@ -69,7 +69,7 @@ build CMakeFiles/KeyboardFactory.dir/components/src/InfoPanel.cpp.obj: CXX_COMPI
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\components\src\InfoPanel.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\components\src
 
@@ -77,7 +77,7 @@ build CMakeFiles/KeyboardFactory.dir/components/src/InfoTab.cpp.obj: CXX_COMPILE
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\components\src\InfoTab.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\components\src
 
@@ -85,7 +85,7 @@ build CMakeFiles/KeyboardFactory.dir/components/src/MainWindow.cpp.obj: CXX_COMP
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\components\src\MainWindow.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\components\src
 
@@ -93,7 +93,7 @@ build CMakeFiles/KeyboardFactory.dir/components/src/SettingTab.cpp.obj: CXX_COMP
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\components\src\SettingTab.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\components\src
 
@@ -101,7 +101,7 @@ build CMakeFiles/KeyboardFactory.dir/components/src/TabWidget.cpp.obj: CXX_COMPI
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\components\src\TabWidget.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\components\src
 
@@ -109,7 +109,7 @@ build CMakeFiles/KeyboardFactory.dir/components/src/TestTab.cpp.obj: CXX_COMPILE
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\components\src\TestTab.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\components\src
 
@@ -117,7 +117,7 @@ build CMakeFiles/KeyboardFactory.dir/components/src/TopPanel.cpp.obj: CXX_COMPIL
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\components\src\TopPanel.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\components\src
 
@@ -125,17 +125,49 @@ build CMakeFiles/KeyboardFactory.dir/components/src/TransferTab.cpp.obj: CXX_COM
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\components\src\TransferTab.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\components\src
+
+build CMakeFiles/KeyboardFactory.dir/service/src/BrightnessService.cpp.obj: CXX_COMPILER__KeyboardFactory_Debug C$:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/BrightnessService.cpp || cmake_object_order_depends_target_KeyboardFactory
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\KeyboardFactory.dir\service\src\BrightnessService.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
+  OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\service\src
+
+build CMakeFiles/KeyboardFactory.dir/service/src/HIDService.cpp.obj: CXX_COMPILER__KeyboardFactory_Debug C$:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/HIDService.cpp || cmake_object_order_depends_target_KeyboardFactory
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\KeyboardFactory.dir\service\src\HIDService.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
+  OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\service\src
+
+build CMakeFiles/KeyboardFactory.dir/service/src/KeyService.cpp.obj: CXX_COMPILER__KeyboardFactory_Debug C$:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/KeyService.cpp || cmake_object_order_depends_target_KeyboardFactory
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\KeyboardFactory.dir\service\src\KeyService.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
+  OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\service\src
 
 build CMakeFiles/KeyboardFactory.dir/service/src/SoundService.cpp.obj: CXX_COMPILER__KeyboardFactory_Debug C$:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/SoundService.cpp || cmake_object_order_depends_target_KeyboardFactory
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\KeyboardFactory.dir\service\src\SoundService.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
   OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\service\src
+
+build CMakeFiles/KeyboardFactory.dir/lib/hidapi/hid.c.obj: C_COMPILER__KeyboardFactory_Debug C$:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/hid.c || cmake_object_order_depends_target_KeyboardFactory
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\KeyboardFactory.dir\lib\hidapi\hid.c.obj.d
+  FLAGS = -g
+  INCLUDES = -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/KeyboardFactory_autogen/include -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc -IC:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi -isystem C:/Qt/6.3.1/mingw_64/include/QtCore -isystem C:/Qt/6.3.1/mingw_64/include -isystem C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.3.1/mingw_64/include/QtGui -isystem C:/Qt/6.3.1/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\KeyboardFactory.dir
+  OBJECT_FILE_DIR = CMakeFiles\KeyboardFactory.dir\lib\hidapi
 
 
 # =============================================================================
@@ -145,7 +177,7 @@ build CMakeFiles/KeyboardFactory.dir/service/src/SoundService.cpp.obj: CXX_COMPI
 #############################################
 # Link the executable KeyboardFactory.exe
 
-build KeyboardFactory.exe: CXX_EXECUTABLE_LINKER__KeyboardFactory_Debug CMakeFiles/KeyboardFactory.dir/KeyboardFactory_autogen/mocs_compilation.cpp.obj CMakeFiles/KeyboardFactory.dir/main.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/InfoPanel.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/InfoTab.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/MainWindow.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/SettingTab.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/TabWidget.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/TestTab.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/TopPanel.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/TransferTab.cpp.obj CMakeFiles/KeyboardFactory.dir/service/src/SoundService.cpp.obj | C$:/Qt/6.3.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.3.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.3.1/mingw_64/lib/libQt6Core.a || KeyboardFactory_autogen KeyboardFactory_autogen_timestamp_deps
+build KeyboardFactory.exe: CXX_EXECUTABLE_LINKER__KeyboardFactory_Debug CMakeFiles/KeyboardFactory.dir/KeyboardFactory_autogen/mocs_compilation.cpp.obj CMakeFiles/KeyboardFactory.dir/main.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/InfoPanel.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/InfoTab.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/MainWindow.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/SettingTab.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/TabWidget.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/TestTab.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/TopPanel.cpp.obj CMakeFiles/KeyboardFactory.dir/components/src/TransferTab.cpp.obj CMakeFiles/KeyboardFactory.dir/service/src/BrightnessService.cpp.obj CMakeFiles/KeyboardFactory.dir/service/src/HIDService.cpp.obj CMakeFiles/KeyboardFactory.dir/service/src/KeyService.cpp.obj CMakeFiles/KeyboardFactory.dir/service/src/SoundService.cpp.obj CMakeFiles/KeyboardFactory.dir/lib/hidapi/hid.c.obj | C$:/Qt/6.3.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.3.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.3.1/mingw_64/lib/libQt6Core.a || KeyboardFactory_autogen KeyboardFactory_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = C:/Qt/6.3.1/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.3.1/mingw_64/lib/libQt6Gui.a  C:/Qt/6.3.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\KeyboardFactory.dir

@@ -17,12 +17,15 @@ find_package(Qt6 COMPONENTS
 include_directories(
         components/inc
         service/inc
+        lib/hidapi
 )
 
 file(GLOB MAIN_INC components/inc/*.h service/inc/*.h)
 file(GLOB MAIN_SRC components/src/*.cpp service/src/*.cpp)
+file(GLOB LIB_INC lib/hidapi/*.h)
+file(GLOB LIB_SRC lib/hidapi/*.c)
 
-add_executable(KeyboardFactory main.cpp ${MAIN_INC} ${MAIN_SRC})
+add_executable(KeyboardFactory main.cpp ${MAIN_INC} ${MAIN_SRC} ${LIB_INC} ${LIB_SRC})
 target_link_libraries(KeyboardFactory
         Qt::Core
         Qt::Gui

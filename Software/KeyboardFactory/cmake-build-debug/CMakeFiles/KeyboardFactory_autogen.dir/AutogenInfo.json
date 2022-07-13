@@ -283,6 +283,30 @@
 			null
 		],
 		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/hidapi.h",
+			"MU",
+			"WJDT7XEPFK/moc_hidapi.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/BrightnessService.h",
+			"MU",
+			"WNY2YJVFSI/moc_BrightnessService.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/HIDService.h",
+			"MU",
+			"WNY2YJVFSI/moc_HIDService.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/KeyService.h",
+			"MU",
+			"WNY2YJVFSI/moc_KeyService.cpp",
+			null
+		],
+		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/SoundService.h",
 			"MU",
 			"WNY2YJVFSI/moc_SoundService.cpp",
@@ -316,6 +340,7 @@
 	[
 		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc",
 		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc",
+		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi",
 		"C:/Qt/6.3.1/mingw_64/include/QtCore",
 		"C:/Qt/6.3.1/mingw_64/include",
 		"C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++",
@@ -401,7 +426,27 @@
 			null
 		],
 		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/hid.c",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/BrightnessService.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/HIDService.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/KeyService.cpp",
 			"MU",
 			null
 		],
