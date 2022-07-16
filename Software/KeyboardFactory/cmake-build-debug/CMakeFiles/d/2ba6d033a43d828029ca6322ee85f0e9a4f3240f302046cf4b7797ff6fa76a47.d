@@ -713,6 +713,8 @@ KeyboardFactory_autogen/timestamp: \
   ../components/src/TestTab.cpp \
   ../components/src/TopPanel.cpp \
   ../components/src/TransferTab.cpp \
+  ../lib/hidapi/include/hidapi.h \
+  ../lib/hidapi/include/hidapi_winapi.h \
   ../main.cpp \
   ../service/inc/BrightnessService.h \
   ../service/inc/HIDService.h \

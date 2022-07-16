@@ -20,6 +20,14 @@ void TopPanel::setupUI() {
     deviceList = new QComboBox(this);
     deviceList->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
     deviceList->setObjectName("DeviceList");
-
+    connect(, SIGNAL())
     hLayout->addWidget(deviceList);
+}
+
+void TopPanel::setHIDService(HIDService *service) {
+    this->hidService = service;
+}
+
+void TopPanel::updateDeviceList(DEV_LIST_T *newList) {
+
 }

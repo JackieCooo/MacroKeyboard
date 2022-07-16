@@ -1,16 +1,16 @@
 #pragma once
 
-#include "hidapi.h"
+#include "HIDUtil.h"
 
 #include <QThread>
 
 class HIDService : public QThread{
 
-#define ANY_VID 0
-#define ANY_PID 0
+    Q_OBJECT
 
 private:
-    hid_device_info* deviceList = nullptr;
+    DEV_LIST_T* deviceList = nullptr;
+    HIDUtil hidUtil;
 
 protected:
     [[noreturn]] void run() override;
@@ -20,9 +20,9 @@ public:
 
 private:
     void scanDevices();
-    static bool isDeviceListEqual(hid_device_info* a, hid_device_info* b);
+    bool isDevListChanged(DEV_LIST_T* devList);
 
 signals:
-    void enumListChanged(hid_device_info* enumList);
+    void devListChanged(DEV_LIST_T* devList);
 
 };

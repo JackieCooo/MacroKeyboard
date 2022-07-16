@@ -713,6 +713,8 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TestTab.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TopPanel.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TransferTab.cpp \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/include/hidapi.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/include/hidapi_winapi.h \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/main.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/BrightnessService.h \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/HIDService.h \
