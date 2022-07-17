@@ -1,0 +1,3 @@
+C:/Users/Jackie/Projects/MacroKeyboard/Firmware/MacroKeyboard_V0.2/cmake-build-debug/CMakeFiles/MacroKeyboard_V0.2.elf.dir
+C:/Users/Jackie/Projects/MacroKeyboard/Firmware/MacroKeyboard_V0.2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Jackie/Projects/MacroKeyboard/Firmware/MacroKeyboard_V0.2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
