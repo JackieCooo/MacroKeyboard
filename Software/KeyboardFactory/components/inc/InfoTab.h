@@ -7,6 +7,7 @@
 #include <QSizePolicy>
 
 #include "InfoPanel.h"
+#include "GlobalData.h"
 
 class InfoTab : public QWidget {
 

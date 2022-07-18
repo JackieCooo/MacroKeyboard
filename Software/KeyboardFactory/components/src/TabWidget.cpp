@@ -19,8 +19,5 @@ void TabWidget::setupUI() {
     settingTab = new SettingTab();
     this->addTab(settingTab, "键位设置");
 
-    testTab = new TestTab();
-    this->addTab(testTab, "接口测试");
-
-    this->setCurrentIndex(2);
+    this->setCurrentIndex(0);
 }

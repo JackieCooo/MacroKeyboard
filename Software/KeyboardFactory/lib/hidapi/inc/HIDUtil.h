@@ -1,8 +1,8 @@
 #pragma once
 
 #include <iostream>
-#include <string>
 #include <list>
+#include <cstring>
 #include <windows.h>
 
 #include "HIDDevInterface.h"
@@ -48,9 +48,15 @@ public:
     BOOL OpenHidDevice(USHORT vid, USHORT pid, BOOL mode);
     BOOL SendDataToHidDevice(UCHAR *data, UINT length, UCHAR out_index, BOOL mode);
     BOOL GetDataFormHidDevice(UCHAR *data, UINT length, UCHAR in_index, BOOL mode);
-    [[nodiscard]] DEV_LIST_T *getDevList() const;
+    DEV_LIST_T *getDevList() const;
 
 private:
     static BOOL isIDMatched(USHORT vid, USHORT pid, HIDD_ATTRIBUTES* devAttributes);
-    void packDevInfo(HIDD_ATTRIBUTES* devAttributes, HIDP_CAPS* devCapabilities, WCHAR* devPathName);
+
+#ifdef UNICODE
+    void packDevInfo(HIDD_ATTRIBUTES* devAttributes, HIDP_CAPS* devCapabilities, WCHAR* devPathName, CHAR* productName);
+#else
+    void packDevInfo(HIDD_ATTRIBUTES* devAttributes, HIDP_CAPS* devCapabilities, CHAR* devPathName, CHAR* productName);
+#endif
+
 };

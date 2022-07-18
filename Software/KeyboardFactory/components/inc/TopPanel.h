@@ -8,25 +8,27 @@
 
 #include "HIDService.h"
 #include "HIDUtil.h"
+#include "GlobalData.h"
 
 class TopPanel : public QWidget {
+
+    Q_OBJECT
 
 private:
     QHBoxLayout* hLayout = nullptr;
     QLabel* label = nullptr;
-    QComboBox* deviceList = nullptr;
+    QComboBox* comboBox = nullptr;
 
     HIDService* hidService = nullptr;
 
 public:
     TopPanel();
     explicit TopPanel(QWidget* parent);
-    void setHIDService(HIDService* service);
 
 private:
     void setupUI();
+    void setCurDev(HIDDevInterface* dev);
 
 private slots:
-    void updateDeviceList(DEV_LIST_T* newList);
-
+    void updateDevList(DEV_LIST_T* newList);
 };

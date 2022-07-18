@@ -1,10 +1,12 @@
 #include "TopPanel.h"
 
 TopPanel::TopPanel() {
+    curDev = nullptr;
     setupUI();
 }
 
 TopPanel::TopPanel(QWidget* parent) {
+    curDev = nullptr;
     this->setParent(parent);
     setupUI();
 }
@@ -17,17 +19,33 @@ void TopPanel::setupUI() {
     label->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
     hLayout->addWidget(label);
 
-    deviceList = new QComboBox(this);
-    deviceList->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
-    deviceList->setObjectName("DeviceList");
-    connect(, SIGNAL())
-    hLayout->addWidget(deviceList);
+    comboBox = new QComboBox(this);
+    hidService = new HIDService();
+    connect(hidService, SIGNAL(devListChanged(DEV_LIST_T *)), this, SLOT(updateDevList(DEV_LIST_T *)));
+    hidService->start();
+    hLayout->addWidget(comboBox);
 }
 
-void TopPanel::setHIDService(HIDService *service) {
-    this->hidService = service;
+void TopPanel::setCurDev(HIDDevInterface* dev) {
+    if (dev == curDev) return;
+    curDev = dev;
+    char* tempBuf[16];
+    itoa(curDev->getVendorId(), tempBuf);
+    vendorPanel->setValueText();
 }
 
-void TopPanel::updateDeviceList(DEV_LIST_T *newList) {
+void TopPanel::updateDevList(DEV_LIST_T* newList) {
+    if (hidService == nullptr) return;
 
+    comboBox->clear();
+    for (auto i : *newList) {
+        comboBox->addItem(i->getProductName());
+    }
+
+    if (newList->empty()) {
+        setCurDev(nullptr);
+    }
+    else {
+        setCurDev(newList->front());
+    }
 }

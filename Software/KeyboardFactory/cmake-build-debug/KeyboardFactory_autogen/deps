@@ -108,6 +108,7 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/iterator_concepts.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
@@ -194,9 +195,12 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/future \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list \
@@ -317,6 +321,7 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/cderr.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/cguid.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/combaseapi.h \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/commctrl.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/commdlg.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/concurrencysal.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -329,6 +334,7 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/dde.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/ddeml.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/debugapi.h \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/devpropdef.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/dlgs.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/dpapi.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/driverspecs.h \
@@ -341,6 +347,9 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/guiddef.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/handleapi.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/heapapi.h \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/hidpi.h \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/hidsdi.h \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/hidusage.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/imm.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/inaddr.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/interlockedapi.h \
@@ -414,6 +423,7 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/securityappcontainer.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/securitybaseapi.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/servprov.h \
+	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/setupapi.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/shellapi.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/signal.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/specstrings.h \
@@ -466,11 +476,8 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/wow64apiset.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/wtypes.h \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/wtypesbase.h \
-	C:/Qt/6.3.1/mingw_64/include/QtCore/QList \
-	C:/Qt/6.3.1/mingw_64/include/QtCore/QObject \
-	C:/Qt/6.3.1/mingw_64/include/QtCore/QRect \
-	C:/Qt/6.3.1/mingw_64/include/QtCore/QSize \
-	C:/Qt/6.3.1/mingw_64/include/QtCore/QSizeF \
+	C:/Qt/6.3.1/mingw_64/include/QtCore/QThread \
+	C:/Qt/6.3.1/mingw_64/include/QtCore/qabstractitemmodel.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qalgorithms.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qanystringview.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qarraydata.h \
@@ -493,9 +500,10 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qcontainerinfo.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qcontainertools_impl.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qcontiguouscache.h \
-	C:/Qt/6.3.1/mingw_64/include/QtCore/qcoreevent.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qdatastream.h \
+	C:/Qt/6.3.1/mingw_64/include/QtCore/qdeadlinetimer.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qdebug.h \
+	C:/Qt/6.3.1/mingw_64/include/QtCore/qelapsedtimer.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qflags.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qgenericatomic.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qglobal.h \
@@ -508,6 +516,7 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qiterator.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qline.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qlist.h \
+	C:/Qt/6.3.1/mingw_64/include/QtCore/qlocale.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qlogging.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qmap.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qmargins.h \
@@ -515,7 +524,6 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qmetacontainer.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qmetatype.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qnamespace.h \
-	C:/Qt/6.3.1/mingw_64/include/QtCore/qnativeinterface.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qnumeric.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qobject.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qobject_impl.h \
@@ -523,10 +531,10 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qobjectdefs_impl.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qpair.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qpoint.h \
-	C:/Qt/6.3.1/mingw_64/include/QtCore/qpointer.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qprocessordetection.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qrect.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qrefcount.h \
+	C:/Qt/6.3.1/mingw_64/include/QtCore/qregularexpression.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qscopedpointer.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qscopeguard.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qset.h \
@@ -549,6 +557,7 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qtcore-config.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qtcoreexports.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qtextstream.h \
+	C:/Qt/6.3.1/mingw_64/include/QtCore/qthread.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qtmetamacros.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qtypeinfo.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qurl.h \
@@ -556,53 +565,56 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qvariant.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qvarlengtharray.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qversiontagging.h \
-	C:/Qt/6.3.1/mingw_64/include/QtGui/QKeyEvent \
-	C:/Qt/6.3.1/mingw_64/include/QtGui/QTransform \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qaction.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qbitmap.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qbrush.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qcolor.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qcursor.h \
-	C:/Qt/6.3.1/mingw_64/include/QtGui/qevent.h \
-	C:/Qt/6.3.1/mingw_64/include/QtGui/qeventpoint.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qfont.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qfontinfo.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qfontmetrics.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qicon.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qimage.h \
-	C:/Qt/6.3.1/mingw_64/include/QtGui/qinputdevice.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qkeysequence.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qpaintdevice.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qpalette.h \
+	C:/Qt/6.3.1/mingw_64/include/QtGui/qpicture.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qpixelformat.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qpixmap.h \
-	C:/Qt/6.3.1/mingw_64/include/QtGui/qpointingdevice.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qpolygon.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qregion.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qrgb.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qrgba64.h \
-	C:/Qt/6.3.1/mingw_64/include/QtGui/qscreen.h \
+	C:/Qt/6.3.1/mingw_64/include/QtGui/qtextdocument.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qtgui-config.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qtguiexports.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qtguiglobal.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qtransform.h \
-	C:/Qt/6.3.1/mingw_64/include/QtGui/qvector2d.h \
-	C:/Qt/6.3.1/mingw_64/include/QtGui/qvectornd.h \
+	C:/Qt/6.3.1/mingw_64/include/QtGui/qvalidator.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.3.1/mingw_64/include/QtGui/qwindowdefs_win.h \
-	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QPushButton \
-	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QSlider \
-	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QVBoxLayout \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QComboBox \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QHBoxLayout \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QLabel \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QSizePolicy \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QWidget \
-	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qabstractslider.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qboxlayout.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qcombobox.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qframe.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qgridlayout.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qlabel.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qlayout.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qlayoutitem.h \
-	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qpushbutton.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qrubberband.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qslider.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qstyle.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qstyleoption.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtabbar.h \
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtabwidget.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -702,7 +714,6 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/MainWindow.h \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/SettingTab.h \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TabWidget.h \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TestTab.h \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TopPanel.h \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TransferTab.h \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/InfoPanel.cpp \
@@ -710,18 +721,15 @@ KeyboardFactory_autogen/timestamp: \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/MainWindow.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/SettingTab.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TabWidget.cpp \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TestTab.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TopPanel.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TransferTab.cpp \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/include/hidapi.h \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/include/hidapi_winapi.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/inc/HIDDevInterface.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/inc/HIDUtil.h \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/src/HIDDevInterface.cpp \
+	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/src/HIDUtil.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/main.cpp \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/BrightnessService.h \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/HIDService.h \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/KeyService.h \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/SoundService.h \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/BrightnessService.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/HIDService.cpp \
 	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/KeyService.cpp \
-	C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/SoundService.cpp \
 	C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/cmake/win/bin/cmake.exe

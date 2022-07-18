@@ -24,13 +24,23 @@ void HIDDevInterface::setVersionNumber(USHORT versionNumber) {
     VersionNumber = versionNumber;
 }
 
+#ifdef UNICODE
 const WCHAR* HIDDevInterface::getDevPathName() const {
     return DevPathName;
 }
 
 void HIDDevInterface::setDevPathName(WCHAR* devPathName) {
-    DevPathName = devPathName;
+    memcpy(DevPathName, devPathName, MAX_DEV_NAME_LEN);
 }
+#else
+const CHAR *HIDDevInterface::getDevPathName() const {
+    return DevPathName;
+}
+
+void HIDDevInterface::setDevPathName(CHAR* devPathName) {
+    strcpy(DevPathName, devPathName);
+}
+#endif
 
 USAGE HIDDevInterface::getUsage() const {
     return Usage;
@@ -150,4 +160,12 @@ USHORT HIDDevInterface::getNumberFeatureDataIndices() const {
 
 void HIDDevInterface::setNumberFeatureDataIndices(USHORT numberFeatureDataIndices) {
     NumberFeatureDataIndices = numberFeatureDataIndices;
+}
+
+const CHAR *HIDDevInterface::getProductName() const {
+    return ProductName;
+}
+
+void HIDDevInterface::setProductName(const CHAR *productName) {
+    strcpy(ProductName, productName);
 }

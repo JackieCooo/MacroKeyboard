@@ -21,7 +21,11 @@ DEV_LIST_T* HIDUtil::FindHidDevice(USHORT vid, USHORT pid) {
     DWORD MemberIndex = 0;  // 定义MemberIndex，表示当前搜索到第几个设备，0表示第一个设备
     HIDP_CAPS Capabilities;
     PHIDP_PREPARSED_DATA HidParsedData;
-    WCHAR* DevicePathName;
+#ifdef UNICODE
+    WCHAR DevicePathName[MAX_DEV_NAME_LEN];
+#else
+    CHAR DevicePathName[MAX_DEV_NAME_LEN];
+#endif
 
     hDevHandle = INVALID_HANDLE_VALUE;
     if(devList != nullptr) devList->clear();  // 清空列表
@@ -54,8 +58,11 @@ DEV_LIST_T* HIDUtil::FindHidDevice(USHORT vid, USHORT pid) {
         pDevDetailData->cbSize = sizeof(SP_DEVICE_INTERFACE_DETAIL_DATA);
         // 2
         Result = SetupDiGetDeviceInterfaceDetail(hDevInfoSet, &DevInterfaceData, pDevDetailData, RequiredSize, nullptr, nullptr);  // 获取设备路径
-
-        DevicePathName = pDevDetailData->DevicePath;
+#ifdef UNICODE
+        memcpy(DevicePathName, pDevDetailData->DevicePath, MAX_DEV_NAME_LEN);
+#else
+        strcpy(DevicePathName, pDevDetailData->DevicePath);
+#endif
         free(pDevDetailData);
 
         if (Result == FALSE) {
@@ -75,12 +82,15 @@ DEV_LIST_T* HIDUtil::FindHidDevice(USHORT vid, USHORT pid) {
             if (isIDMatched(vid, pid, &DevAttributes)) {
 //                cout << "VID: " << DevAttributes.VendorID << " PID: " << DevAttributes.ProductID << " PATH: " << DevicePathName << endl;
                 HidD_GetPreparsedData(hDevHandle, &HidParsedData);
-
                 HidP_GetCaps(HidParsedData, &Capabilities);  // 获取设备能力属性
-
                 HidD_FreePreparsedData(HidParsedData);
 
-                packDevInfo(&DevAttributes, &Capabilities, DevicePathName);
+                WCHAR wcsBuf[MAX_DEV_PRODUCT_STR_LEN];
+                CHAR csBuf[MAX_DEV_PRODUCT_STR_LEN];
+                HidD_GetProductString(hDevHandle, wcsBuf, MAX_DEV_PRODUCT_STR_LEN);  // 获取产品名
+                wcstombs(csBuf, wcsBuf, MAX_DEV_PRODUCT_STR_LEN);  // Unicode转换
+
+                packDevInfo(&DevAttributes, &Capabilities, DevicePathName, csBuf);
             }
             CloseHandle(hDevHandle);
         }
@@ -104,7 +114,8 @@ BOOL HIDUtil::OpenHidDevice(USHORT vid, USHORT pid, BOOL mode) {
     {
         if (mode)  // 同步
         {
-            hWriteHandle = CreateFile(dev->getDevPathName(), GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, nullptr, OPEN_EXISTING, 0, nullptr);
+            hWriteHandle = CreateFile(dev->getDevPathName(),
+                                      GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, nullptr, OPEN_EXISTING, 0, nullptr);
         }
         else  // 异步
         {
@@ -248,7 +259,11 @@ BOOL HIDUtil::isIDMatched(USHORT vid, USHORT pid, HIDD_ATTRIBUTES *devAttributes
     return TRUE;
 }
 
-void HIDUtil::packDevInfo(HIDD_ATTRIBUTES* devAttributes, HIDP_CAPS* devCapabilities, WCHAR* devPathName) {
+#ifdef UNICODE
+void HIDUtil::packDevInfo(HIDD_ATTRIBUTES* devAttributes, HIDP_CAPS* devCapabilities, WCHAR* devPathName, CHAR* productName) {
+#else
+void HIDUtil::packDevInfo(HIDD_ATTRIBUTES* devAttributes, HIDP_CAPS* devCapabilities, CHAR* devPathName, CHAR* productName) {
+#endif
     auto* devInterface = new HIDDevInterface();
 
     devInterface->setDevPathName(devPathName);
@@ -256,6 +271,8 @@ void HIDUtil::packDevInfo(HIDD_ATTRIBUTES* devAttributes, HIDP_CAPS* devCapabili
     devInterface->setVendorId(devAttributes->VendorID);
     devInterface->setProductId(devAttributes->ProductID);
     devInterface->setVersionNumber(devAttributes->VersionNumber);
+
+    devInterface->setProductName(productName);
 
     devInterface->setFeatureReportByteLength(devCapabilities->FeatureReportByteLength);
     devInterface->setInputReportByteLength(devCapabilities->InputReportByteLength);

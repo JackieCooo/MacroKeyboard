@@ -8,6 +8,10 @@ extern "C" {
 #include "hidsdi.h"
 }
 
+/* 配置 */
+#define MAX_DEV_NAME_LEN 512
+#define MAX_DEV_PRODUCT_STR_LEN 128
+
 using namespace std;
 
 class HIDDevInterface {
@@ -16,7 +20,12 @@ private:
     USHORT VendorID;
     USHORT ProductID;
     USHORT VersionNumber;
-    WCHAR* DevPathName;
+    CHAR ProductName[MAX_DEV_PRODUCT_STR_LEN];
+#ifdef UNICODE
+    WCHAR DevPathName[MAX_DEV_NAME_LEN];
+#else
+    CHAR DevPathName[MAX_DEV_NAME_LEN];
+#endif
     USAGE Usage;
     USAGE UsagePage;
     USHORT InputReportByteLength;
@@ -39,10 +48,18 @@ public:
     void setVendorId(USHORT vendorId);
     USHORT getProductId() const;
     void setProductId(USHORT productId);
+    const CHAR *getProductName() const;
+    void setProductName(const CHAR* productName);
     USHORT getVersionNumber() const;
     void setVersionNumber(USHORT versionNumber);
+
+#ifdef UNICODE
     const WCHAR* getDevPathName() const;
     void setDevPathName(WCHAR* devPathName);
+#else
+    const CHAR *getDevPathName() const;
+    void setDevPathName(CHAR* devPathName);
+#endif
     USAGE getUsage() const;
     void setUsage(USAGE usage);
     USAGE getUsagePage() const;

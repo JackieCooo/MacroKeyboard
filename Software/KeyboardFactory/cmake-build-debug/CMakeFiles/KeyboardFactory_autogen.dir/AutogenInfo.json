@@ -265,12 +265,6 @@
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TestTab.h",
-			"MU",
-			"6HJHM45RNC/moc_TestTab.cpp",
-			null
-		],
-		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc/TopPanel.h",
 			"MU",
 			"6HJHM45RNC/moc_TopPanel.cpp",
@@ -295,12 +289,6 @@
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/BrightnessService.h",
-			"MU",
-			"WNY2YJVFSI/moc_BrightnessService.cpp",
-			null
-		],
-		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/HIDService.h",
 			"MU",
 			"WNY2YJVFSI/moc_HIDService.cpp",
@@ -313,9 +301,9 @@
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/SoundService.h",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/inc/GlobalData.h",
 			"MU",
-			"WNY2YJVFSI/moc_SoundService.cpp",
+			"Q6EJXYJ2UX/moc_GlobalData.cpp",
 			null
 		]
 	],
@@ -347,6 +335,7 @@
 		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc",
 		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc",
 		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/inc",
+		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/inc",
 		"C:/Qt/6.3.1/mingw_64/include/QtCore",
 		"C:/Qt/6.3.1/mingw_64/include",
 		"C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++",
@@ -417,11 +406,6 @@
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TestTab.cpp",
-			"MU",
-			null
-		],
-		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/src/TopPanel.cpp",
 			"MU",
 			null
@@ -447,11 +431,6 @@
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/BrightnessService.cpp",
-			"MU",
-			null
-		],
-		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/HIDService.cpp",
 			"MU",
 			null
@@ -462,7 +441,7 @@
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/SoundService.cpp",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/src/GlobalData.cpp",
 			"MU",
 			null
 		]

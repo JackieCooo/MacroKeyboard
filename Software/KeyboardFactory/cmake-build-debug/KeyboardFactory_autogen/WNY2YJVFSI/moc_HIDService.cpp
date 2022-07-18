@@ -23,21 +23,21 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_HIDService_t {
     const uint offsetsAndSize[10];
-    char stringdata0[54];
+    char stringdata0[47];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_HIDService_t, stringdata0) + ofs), len 
 static const qt_meta_stringdata_HIDService_t qt_meta_stringdata_HIDService = {
     {
 QT_MOC_LITERAL(0, 10), // "HIDService"
-QT_MOC_LITERAL(11, 15), // "enumListChanged"
-QT_MOC_LITERAL(27, 0), // ""
-QT_MOC_LITERAL(28, 16), // "hid_device_info*"
-QT_MOC_LITERAL(45, 8) // "enumList"
+QT_MOC_LITERAL(11, 14), // "devListChanged"
+QT_MOC_LITERAL(26, 0), // ""
+QT_MOC_LITERAL(27, 11), // "DEV_LIST_T*"
+QT_MOC_LITERAL(39, 7) // "service"
 
     },
-    "HIDService\0enumListChanged\0\0"
-    "hid_device_info*\0enumList"
+    "HIDService\0devListChanged\0\0DEV_LIST_T*\0"
+    "service"
 };
 #undef QT_MOC_LITERAL
 
@@ -69,14 +69,14 @@ void HIDService::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<HIDService *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->enumListChanged((*reinterpret_cast< std::add_pointer_t<hid_device_info*>>(_a[1]))); break;
+        case 0: _t->devListChanged((*reinterpret_cast< std::add_pointer_t<DEV_LIST_T*>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (HIDService::*)(hid_device_info * );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&HIDService::enumListChanged)) {
+            using _t = void (HIDService::*)(DEV_LIST_T * );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&HIDService::devListChanged)) {
                 *result = 0;
                 return;
             }
@@ -91,7 +91,7 @@ const QMetaObject HIDService::staticMetaObject = { {
     qt_static_metacall,
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_HIDService_t
-, QtPrivate::TypeAndForceComplete<HIDService, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<hid_device_info *, std::false_type>
+, QtPrivate::TypeAndForceComplete<HIDService, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<DEV_LIST_T *, std::false_type>
 
 
 
@@ -131,7 +131,7 @@ int HIDService::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void HIDService::enumListChanged(hid_device_info * _t1)
+void HIDService::devListChanged(DEV_LIST_T * _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
