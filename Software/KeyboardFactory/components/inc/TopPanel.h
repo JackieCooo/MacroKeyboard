@@ -5,10 +5,10 @@
 #include <QComboBox>
 #include <QHBoxLayout>
 #include <QSizePolicy>
+#include <QDebug>
 
-#include "HIDService.h"
-#include "HIDUtil.h"
-#include "GlobalData.h"
+#include "HidService.h"
+#include "GlobalEvent.h"
 
 class TopPanel : public QWidget {
 
@@ -19,16 +19,16 @@ private:
     QLabel* label = nullptr;
     QComboBox* comboBox = nullptr;
 
-    HIDService* hidService = nullptr;
-
 public:
     TopPanel();
     explicit TopPanel(QWidget* parent);
 
 private:
     void setupUI();
-    void setCurDev(HIDDevInterface* dev);
 
 private slots:
     void updateDevList(DEV_LIST_T* newList);
+
+signals:
+    void curDevChanged(HIDDevInterface* newDev);
 };

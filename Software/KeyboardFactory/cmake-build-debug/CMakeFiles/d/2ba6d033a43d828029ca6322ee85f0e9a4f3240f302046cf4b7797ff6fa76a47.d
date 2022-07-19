@@ -179,6 +179,7 @@ KeyboardFactory_autogen/timestamp: \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/concepts \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstddef \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
+  C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstring \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
@@ -476,6 +477,10 @@ KeyboardFactory_autogen/timestamp: \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/wow64apiset.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/wtypes.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/wtypesbase.h \
+  C:/Qt/6.3.1/mingw_64/include/QtCore/QDebug \
+  C:/Qt/6.3.1/mingw_64/include/QtCore/QMutex \
+  C:/Qt/6.3.1/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.3.1/mingw_64/include/QtCore/QString \
   C:/Qt/6.3.1/mingw_64/include/QtCore/QThread \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qalgorithms.h \
@@ -523,6 +528,7 @@ KeyboardFactory_autogen/timestamp: \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qmetacontainer.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qmetatype.h \
+  C:/Qt/6.3.1/mingw_64/include/QtCore/qmutex.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qnamespace.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qnumeric.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qobject.h \
@@ -578,6 +584,7 @@ KeyboardFactory_autogen/timestamp: \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qpalette.h \
+  C:/Qt/6.3.1/mingw_64/include/QtGui/qpen.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qpixmap.h \
@@ -585,7 +592,10 @@ KeyboardFactory_autogen/timestamp: \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.3.1/mingw_64/include/QtGui/qtextcursor.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qtextdocument.h \
+  C:/Qt/6.3.1/mingw_64/include/QtGui/qtextformat.h \
+  C:/Qt/6.3.1/mingw_64/include/QtGui/qtextoption.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qtguiglobal.h \
@@ -594,11 +604,15 @@ KeyboardFactory_autogen/timestamp: \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/QComboBox \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/QGridLayout \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/QHBoxLayout \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/QSizePolicy \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/QTextBrowser \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qabstractslider.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qboxlayout.h \
@@ -615,6 +629,8 @@ KeyboardFactory_autogen/timestamp: \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qstyleoption.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtabbar.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtabwidget.h \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtextbrowser.h \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtextedit.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -723,13 +739,19 @@ KeyboardFactory_autogen/timestamp: \
   ../components/src/TabWidget.cpp \
   ../components/src/TopPanel.cpp \
   ../components/src/TransferTab.cpp \
+  ../hid/inc/HidReceiveThread.h \
+  ../hid/inc/HidScanDevThread.h \
+  ../hid/inc/HidService.h \
+  ../hid/src/HidReceiveThread.cpp \
+  ../hid/src/HidScanDevThread.cpp \
+  ../hid/src/HidService.cpp \
+  ../keyboard/inc/KeyService.h \
+  ../keyboard/src/KeyService.cpp \
   ../lib/hidapi/inc/HIDDevInterface.h \
   ../lib/hidapi/inc/HIDUtil.h \
   ../lib/hidapi/src/HIDDevInterface.cpp \
   ../lib/hidapi/src/HIDUtil.cpp \
   ../main.cpp \
-  ../service/inc/HIDService.h \
-  ../service/inc/KeyService.h \
-  ../service/src/HIDService.cpp \
-  ../service/src/KeyService.cpp \
+  ../util/inc/GlobalEvent.h \
+  ../util/src/GlobalEvent.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/cmake/win/bin/cmake.exe

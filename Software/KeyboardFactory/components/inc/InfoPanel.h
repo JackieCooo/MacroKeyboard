@@ -13,19 +13,13 @@ private:
     QLabel* label = nullptr;
     QLabel* value = nullptr;
 
-    QString labelText = "";
-    QString valueText = "";
-
 public:
     InfoPanel();
     explicit InfoPanel(QWidget* parent);
     InfoPanel(QWidget* parent, const QString& text);
-    [[nodiscard]] const QString &getLabelText() const;
-    void setLabelText(const QString &labelText);
-    [[nodiscard]] const QString &getValueText() const;
     void setValueText(const QString &valueText);
 
 private:
-    void setupUI();
+    void setupUI(const QString& text);
 
 };

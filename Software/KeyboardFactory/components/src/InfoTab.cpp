@@ -24,6 +24,50 @@ void InfoTab::setupUI() {
 
     moreInfo = new QLabel(this);
     moreInfo->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
-    moreInfo->setText("test text");
     gLayout->addWidget(moreInfo, 1, 0, 1, 3);
+
+    // 接收全局当前设备改变信号
+    connect(GlobalEvent::getInstance(), SIGNAL(bridgeCurDevChanged(HIDDevInterface*)), this, SLOT(updateCurDevInfo(HIDDevInterface*)));
+}
+
+void InfoTab::updateCurDevInfo(HIDDevInterface *newDev) {
+    if (newDev == nullptr) {
+//        qDebug("newDev == nullptr");
+        vendorPanel->setValueText(nullptr);
+        productPanel->setValueText(nullptr);
+        versionPanel->setValueText(nullptr);
+        moreInfo->setText(nullptr);
+        return;
+    }
+
+//    qDebug("newDev != nullptr");
+    char tmpBuf[16];
+    QString tmpStr;
+
+    itoa(newDev->getVendorId(), tmpBuf, 10);
+    tmpStr = tmpBuf;
+    vendorPanel->setValueText(tmpStr);
+
+    itoa(newDev->getProductId(), tmpBuf, 10);
+    tmpStr = tmpBuf;
+    productPanel->setValueText(tmpStr);
+
+    itoa(newDev->getVersionNumber(), tmpBuf, 10);
+    tmpStr = tmpBuf;
+    versionPanel->setValueText(tmpStr);
+
+    tmpStr.clear();
+    tmpStr += "FeatureReportLength: ";
+    itoa(newDev->getFeatureReportByteLength(), tmpBuf, 10);
+    tmpStr += tmpBuf;
+    tmpStr += '\n';
+    tmpStr += "OutputReportLength: ";
+    itoa(newDev->getOutputReportByteLength(), tmpBuf, 10);
+    tmpStr += tmpBuf;
+    tmpStr += '\n';
+    tmpStr += "InputReportLength: ";
+    itoa(newDev->getInputReportByteLength(), tmpBuf, 10);
+    tmpStr += tmpBuf;
+    tmpStr += '\n';
+    moreInfo->setText(tmpStr);
 }

@@ -5,8 +5,15 @@
 #include <QLabel>
 #include <QTextBrowser>
 #include <QSizePolicy>
+#include <QString>
+#include <cstdio>
+
+#include "GlobalEvent.h"
+#include "HidService.h"
 
 class TransferTab : public QWidget {
+
+    Q_OBJECT
 
 private:
     QVBoxLayout* vLayout = nullptr;
@@ -21,5 +28,8 @@ public:
 
 private:
     void setupUI();
+
+private slots:
+    void updateReceiveInfo(uint8_t* buf);
 
 };

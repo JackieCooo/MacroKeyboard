@@ -17,12 +17,13 @@ find_package(Qt6 COMPONENTS
 link_directories(lib/hidapi/x64)
 include_directories(
         components/inc
-        service/inc
+        hid/inc
         lib/hidapi/inc
         util/inc
+        keyboard/inc
 )
 
-file(GLOB_RECURSE MAIN_FILE components/*.* service/*.* util/*.*)
+file(GLOB_RECURSE MAIN_FILE components/*.* hid/*.* util/*.* keyboard/*.*)
 file(GLOB HID_LIB lib/hidapi/inc/*.h lib/hidapi/src/*.cpp)
 
 link_libraries(hid SetupAPI)

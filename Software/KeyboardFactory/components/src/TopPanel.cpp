@@ -1,12 +1,10 @@
 #include "TopPanel.h"
 
 TopPanel::TopPanel() {
-    curDev = nullptr;
     setupUI();
 }
 
 TopPanel::TopPanel(QWidget* parent) {
-    curDev = nullptr;
     this->setParent(parent);
     setupUI();
 }
@@ -20,18 +18,9 @@ void TopPanel::setupUI() {
     hLayout->addWidget(label);
 
     comboBox = new QComboBox(this);
-    hidService = new HIDService();
-    connect(hidService, SIGNAL(devListChanged(DEV_LIST_T *)), this, SLOT(updateDevList(DEV_LIST_T *)));
-    hidService->start();
+    // 接收全局设备列表改变信号
+    connect(GlobalEvent::getInstance(), SIGNAL(bridgeDevListChanged(DEV_LIST_T*)), this, SLOT(updateDevList(DEV_LIST_T*)));
     hLayout->addWidget(comboBox);
-}
-
-void TopPanel::setCurDev(HIDDevInterface* dev) {
-    if (dev == curDev) return;
-    curDev = dev;
-    char* tempBuf[16];
-    itoa(curDev->getVendorId(), tempBuf);
-    vendorPanel->setValueText();
 }
 
 void TopPanel::updateDevList(DEV_LIST_T* newList) {
@@ -43,9 +32,9 @@ void TopPanel::updateDevList(DEV_LIST_T* newList) {
     }
 
     if (newList->empty()) {
-        setCurDev(nullptr);
+        hidService->setCurDev(nullptr);
     }
     else {
-        setCurDev(newList->front());
+        hidService->setCurDev(newList->front());
     }
 }

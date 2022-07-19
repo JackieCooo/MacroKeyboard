@@ -48,7 +48,7 @@ public:
     BOOL OpenHidDevice(USHORT vid, USHORT pid, BOOL mode);
     BOOL SendDataToHidDevice(UCHAR *data, UINT length, UCHAR out_index, BOOL mode);
     BOOL GetDataFormHidDevice(UCHAR *data, UINT length, UCHAR in_index, BOOL mode);
-    DEV_LIST_T *getDevList() const;
+    [[nodiscard]] DEV_LIST_T *getDevList() const;
 
 private:
     static BOOL isIDMatched(USHORT vid, USHORT pid, HIDD_ATTRIBUTES* devAttributes);

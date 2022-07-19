@@ -1,4 +1,4 @@
-#include "KeyService.h"
+#include "../inc/KeyService.h"
 
 void KeyService::comboKey1Pressed() {
     keybd_event(VK_LWIN, 0, 0, 0);

@@ -277,6 +277,30 @@
 			null
 		],
 		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/inc/HidReceiveThread.h",
+			"MU",
+			"IGYUU32AL2/moc_HidReceiveThread.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/inc/HidScanDevThread.h",
+			"MU",
+			"IGYUU32AL2/moc_HidScanDevThread.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/inc/HidService.h",
+			"MU",
+			"IGYUU32AL2/moc_HidService.cpp",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/keyboard/inc/KeyService.h",
+			"MU",
+			"2LCB6I5AMZ/moc_KeyService.cpp",
+			null
+		],
+		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/inc/HIDDevInterface.h",
 			"MU",
 			"O6WJESQHBA/moc_HIDDevInterface.cpp",
@@ -289,21 +313,15 @@
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/HIDService.h",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/inc/GlobalEvent.h",
 			"MU",
-			"WNY2YJVFSI/moc_HIDService.cpp",
+			"Q6EJXYJ2UX/moc_GlobalEvent.cpp",
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/KeyService.h",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/inc/IniHandler.h",
 			"MU",
-			"WNY2YJVFSI/moc_KeyService.cpp",
-			null
-		],
-		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/inc/GlobalData.h",
-			"MU",
-			"Q6EJXYJ2UX/moc_GlobalData.cpp",
+			"Q6EJXYJ2UX/moc_IniHandler.cpp",
 			null
 		]
 	],
@@ -333,9 +351,10 @@
 	"MOC_INCLUDES" : 
 	[
 		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/components/inc",
-		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc",
+		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/inc",
 		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/inc",
 		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/inc",
+		"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/keyboard/inc",
 		"C:/Qt/6.3.1/mingw_64/include/QtCore",
 		"C:/Qt/6.3.1/mingw_64/include",
 		"C:/Qt/6.3.1/mingw_64/mkspecs/win32-g++",
@@ -416,6 +435,26 @@
 			null
 		],
 		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/src/HidReceiveThread.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/src/HidScanDevThread.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/src/HidService.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/keyboard/src/KeyService.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/src/HIDDevInterface.cpp",
 			"MU",
 			null
@@ -431,17 +470,12 @@
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/HIDService.cpp",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/src/GlobalEvent.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/src/KeyService.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/src/GlobalData.cpp",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/src/IniHandler.cpp",
 			"MU",
 			null
 		]

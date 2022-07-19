@@ -5,11 +5,15 @@
 #include <QHBoxLayout>
 #include <QGridLayout>
 #include <QSizePolicy>
+#include <QString>
 
 #include "InfoPanel.h"
-#include "GlobalData.h"
+#include "GlobalEvent.h"
+#include "HIDDevInterface.h"
 
 class InfoTab : public QWidget {
+
+    Q_OBJECT
 
 private:
     QGridLayout* gLayout = nullptr;
@@ -25,4 +29,6 @@ public:
 private:
     void setupUI();
 
+private slots:
+    void updateCurDevInfo(HIDDevInterface* newDev);
 };

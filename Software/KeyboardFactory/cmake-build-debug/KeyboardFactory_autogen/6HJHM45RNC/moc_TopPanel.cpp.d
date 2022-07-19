@@ -441,6 +441,9 @@ C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debu
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/wow64apiset.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/wtypes.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.1/bin/mingw/x86_64-w64-mingw32/include/wtypesbase.h \
+  C:/Qt/6.3.1/mingw_64/include/QtCore/QDebug \
+  C:/Qt/6.3.1/mingw_64/include/QtCore/QMutex \
+  C:/Qt/6.3.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.3.1/mingw_64/include/QtCore/QThread \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qalgorithms.h \
@@ -488,6 +491,7 @@ C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debu
   C:/Qt/6.3.1/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qmetacontainer.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qmetatype.h \
+  C:/Qt/6.3.1/mingw_64/include/QtCore/qmutex.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qnamespace.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qnumeric.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qobject.h \
@@ -584,6 +588,9 @@ C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debu
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qwidget.h \
+  C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/inc/HidReceiveThread.h \
+  C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/inc/HidScanDevThread.h \
+  C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/hid/inc/HidService.h \
   C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/inc/HIDDevInterface.h \
   C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/lib/hidapi/inc/HIDUtil.h \
-  C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/service/inc/HIDService.h
+  C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/inc/GlobalEvent.h
