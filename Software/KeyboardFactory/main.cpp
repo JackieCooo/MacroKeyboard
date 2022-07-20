@@ -2,8 +2,10 @@
 
 #include "MainWindow.h"
 #include "HidService.h"
+#include "IniHandler.h"
 
 HidService* hidService = nullptr;
+IniHandler* iniHandler = nullptr;
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
@@ -12,7 +14,10 @@ int main(int argc, char *argv[]) {
     mainWindow.resize(800, 600);
     mainWindow.show();
 
-    // 主窗口初始化完毕，启动设备扫描线程
+    // 初始化系统本地文件服务
+    iniHandler = new IniHandler();
+
+    // 启动设备扫描线程
     hidService = new HidService();
     hidService->startScanService();
 

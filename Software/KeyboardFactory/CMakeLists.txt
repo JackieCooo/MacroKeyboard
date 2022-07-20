@@ -21,9 +21,10 @@ include_directories(
         lib/hidapi/inc
         util/inc
         keyboard/inc
+        model/inc
 )
 
-file(GLOB_RECURSE MAIN_FILE components/*.* hid/*.* util/*.* keyboard/*.*)
+file(GLOB_RECURSE MAIN_FILE components/*.* hid/*.* util/*.* keyboard/*.* model/*.*)
 file(GLOB HID_LIB lib/hidapi/inc/*.h lib/hidapi/src/*.cpp)
 
 link_libraries(hid SetupAPI)
