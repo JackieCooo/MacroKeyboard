@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     mainWindow.resize(800, 600);
     mainWindow.show();
 
-    // 初始化系统本地文件服务
+    // 初始化系统本地配置服务
     iniHandler = new IniHandler();
 
     // 启动设备扫描线程

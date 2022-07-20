@@ -8,12 +8,20 @@ void Product::setName(const QString &name) {
     this->name = name;
 }
 
-int Product::getPid() const {
+uint16_t Product::getPid() const {
     return pid;
 }
 
-void Product::setPid(int pid) {
+void Product::setPid(uint16_t pid) {
     this->pid = pid;
 }
 
-Product::Product(const QString &name, int pid) : name(name), pid(pid) {}
+Product::Product(const QString &name, uint16_t pid) : name(name), pid(pid) {}
+
+uint8_t Product::getKeys() const {
+    return keys;
+}
+
+void Product::setKeys(uint8_t keys) {
+    this->keys = keys;
+}

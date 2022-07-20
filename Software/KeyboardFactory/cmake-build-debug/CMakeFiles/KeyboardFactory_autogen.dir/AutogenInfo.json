@@ -319,6 +319,12 @@
 			null
 		],
 		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/inc/UserConf.h",
+			"MU",
+			"GRDNRCRIWQ/moc_UserConf.cpp",
+			null
+		],
+		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/util/inc/GlobalEvent.h",
 			"MU",
 			"Q6EJXYJ2UX/moc_GlobalEvent.cpp",
@@ -478,6 +484,11 @@
 		],
 		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/src/Product.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/src/UserConf.cpp",
 			"MU",
 			null
 		],
