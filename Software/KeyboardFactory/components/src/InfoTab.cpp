@@ -57,15 +57,15 @@ void InfoTab::updateCurDevInfo(HIDDevInterface *newDev) {
     versionPanel->setValueText(tmpStr);
 
     tmpStr.clear();
-    tmpStr += "FeatureReportLength: ";
+    tmpStr += "特征报告长度: ";
     itoa(newDev->getFeatureReportByteLength(), tmpBuf, 10);
     tmpStr += tmpBuf;
     tmpStr += '\n';
-    tmpStr += "OutputReportLength: ";
+    tmpStr += "输出报告长度: ";
     itoa(newDev->getOutputReportByteLength(), tmpBuf, 10);
     tmpStr += tmpBuf;
     tmpStr += '\n';
-    tmpStr += "InputReportLength: ";
+    tmpStr += "输入报告长度: ";
     itoa(newDev->getInputReportByteLength(), tmpBuf, 10);
     tmpStr += tmpBuf;
     tmpStr += '\n';

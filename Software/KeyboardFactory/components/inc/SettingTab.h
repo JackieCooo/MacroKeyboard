@@ -8,7 +8,13 @@
 #include <QPushButton>
 #include <QHBoxLayout>
 
+#include "KeyMapList.h"
+#include "IniHandler.h"
+#include "VirtualKeyList.h"
+
 class SettingTab : public QWidget {
+
+    Q_OBJECT
 
 private:
     QGridLayout* gLayout = nullptr;
@@ -27,5 +33,10 @@ public:
 
 private:
     void setupUI();
+
+private slots:
+    void updateKeyList(KeyMapList* curKeyMap);
+    void updateKeySettingPanel(int curRow);
+    void setNewKeyMap();
 
 };

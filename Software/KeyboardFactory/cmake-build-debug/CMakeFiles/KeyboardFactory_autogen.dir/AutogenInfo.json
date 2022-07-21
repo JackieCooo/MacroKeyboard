@@ -313,15 +313,21 @@
 			null
 		],
 		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/inc/KeyMapList.h",
+			"MU",
+			"GRDNRCRIWQ/moc_KeyMapList.cpp",
+			null
+		],
+		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/inc/Product.h",
 			"MU",
 			"GRDNRCRIWQ/moc_Product.cpp",
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/inc/UserConf.h",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/inc/VirtualKeyList.h",
 			"MU",
-			"GRDNRCRIWQ/moc_UserConf.cpp",
+			"GRDNRCRIWQ/moc_VirtualKeyList.cpp",
 			null
 		],
 		[
@@ -483,12 +489,17 @@
 			null
 		],
 		[
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/src/KeyMapList.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/src/Product.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/src/UserConf.cpp",
+			"C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/model/src/VirtualKeyList.cpp",
 			"MU",
 			null
 		],
