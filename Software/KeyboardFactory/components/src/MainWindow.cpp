@@ -4,6 +4,11 @@ MainWindow::MainWindow() {
     setupUI();
 }
 
+void MainWindow::closeEvent(QCloseEvent *event) {
+    ::raise(SIGINT);  // 发送主窗口关闭信号
+    event->accept();
+}
+
 void MainWindow::setupUI() {
     mainFrame = new QWidget(this);
 

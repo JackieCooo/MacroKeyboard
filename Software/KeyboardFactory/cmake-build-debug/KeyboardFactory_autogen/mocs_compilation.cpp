@@ -6,5 +6,6 @@
 #include "IGYUU32AL2/moc_HidReceiveThread.cpp"
 #include "IGYUU32AL2/moc_HidScanDevThread.cpp"
 #include "IGYUU32AL2/moc_HidService.cpp"
+#include "2LCB6I5AMZ/moc_KeyService.cpp"
 #include "Q6EJXYJ2UX/moc_GlobalEvent.cpp"
 #include "Q6EJXYJ2UX/moc_IniHandler.cpp"

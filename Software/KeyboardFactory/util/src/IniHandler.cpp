@@ -12,12 +12,12 @@ IniHandler::~IniHandler() {
     saveUserConf();
 
     for (auto i : *productList) {
-        free(i);
+        delete i;
     }
-    free(productList);
+    delete productList;
     productList = nullptr;
 
-    free(userKeyMapList);
+    delete userKeyMapList;
     userKeyMapList = nullptr;
 }
 
@@ -82,6 +82,7 @@ void IniHandler::saveUserConf() {
             keyNum += ch;
             userIni.setValue(keyNum , j);
             keyNum.remove(ch);
+            ++index;
         }
     }
     userIni.endArray();

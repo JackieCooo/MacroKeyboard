@@ -81,7 +81,7 @@ void SettingTab::updateKeyList(KeyMapList *curKeyMap) {
 }
 
 void SettingTab::updateKeySettingPanel(int curRow) {
-    qDebug("curRow: %d", curRow);
+//    qDebug("curRow: %d", curRow);
     auto keyMap = iniHandler->getUserKeyMapList()->getKeyMap();
     firstKey->setCurrentText(virtualKeyList->keyName(keyMap[curRow][0]));
     secondKey->setCurrentText(virtualKeyList->keyName(keyMap[curRow][1]));

@@ -181,7 +181,7 @@ void EXTI0_IRQHandler(void)
 		printf("按键0按下\n");
 		if ((PrevXferComplete) && (bDeviceState == CONFIGURED))
 		{
-			txBuf[0] = 0x05;
+			txBuf[0] = 0x01;
 			txBuf[1] = 0x01;
 			
 			printf("发送: %x, %x\n", txBuf[0], txBuf[1]);
@@ -210,8 +210,8 @@ void EXTI15_10_IRQHandler(void)
 		printf("按键1按下\n");
 		if ((PrevXferComplete) && (bDeviceState == CONFIGURED))
 		{
-			txBuf[0] = 0x06;
-			txBuf[1] = 0x01;
+			txBuf[0] = 0x01;
+			txBuf[1] = 0x02;
 			
 			printf("发送: %x, %x\n", txBuf[0], txBuf[1]);
 

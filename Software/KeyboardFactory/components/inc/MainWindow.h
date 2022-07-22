@@ -3,6 +3,8 @@
 #include <QMainWindow>
 #include <QWidget>
 #include <QVBoxLayout>
+#include <QCloseEvent>
+#include <csignal>
 
 #include "TopPanel.h"
 #include "TabWidget.h"
@@ -14,6 +16,9 @@ private:
     QVBoxLayout* vLayout = nullptr;
     TopPanel* topPanel = nullptr;
     TabWidget* tabWidget = nullptr;
+
+protected:
+    void closeEvent(QCloseEvent *event) override;
 
 public:
     MainWindow();
