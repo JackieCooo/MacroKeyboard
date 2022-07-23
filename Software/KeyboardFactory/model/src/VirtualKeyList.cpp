@@ -1,9 +1,19 @@
 #include "VirtualKeyList.h"
 
+/**
+  * @brief 虚拟键列表类构造函数
+  * @param 无
+  * @retval 无
+  */
 VirtualKeyList::VirtualKeyList() {
     setupList();
 }
 
+/**
+  * @brief 初始化列表
+  * @param 无
+  * @retval 无
+  */
 void VirtualKeyList::setupList() {
     this->resize(256);
 
@@ -266,6 +276,11 @@ void VirtualKeyList::setupList() {
 
 }
 
+/**
+  * @brief 由虚拟键名查找虚拟键码
+  * @param name 虚拟键名
+  * @retval 返回虚拟键码
+  */
 uint8_t VirtualKeyList::keyCode(const QString &name) {
     for (int i = 0; i < 256; ++i) {
         if ((*this)[i] == name) return i;
@@ -273,6 +288,11 @@ uint8_t VirtualKeyList::keyCode(const QString &name) {
     return 0;
 }
 
+/**
+  * @brief 有虚拟键码查找虚拟键名
+  * @param keyCode 虚拟键码
+  * @retval 返回虚拟键名
+  */
 QString& VirtualKeyList::keyName(uint8_t keyCode) {
     return (*this)[keyCode];
 }

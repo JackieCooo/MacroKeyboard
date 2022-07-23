@@ -1,5 +1,10 @@
 #include "IniHandler.h"
 
+/**
+  * @brief 配置文件助手类构造函数
+  * @param 无
+  * @retval 无
+  */
 IniHandler::IniHandler() {
     productList = new QList<Product*>();
     initSysIni();
@@ -8,6 +13,11 @@ IniHandler::IniHandler() {
     connect(GlobalEvent::getInstance(), SIGNAL(bridgeCurDevChanged(HIDDevInterface*)), this, SLOT(updateCurUserKeyMapList(HIDDevInterface*)));
 }
 
+/**
+  * @brief 配置文件助手析构函数，释放内存
+  * @param 无
+  * @retval 无
+  */
 IniHandler::~IniHandler() {
     saveUserConf();
 
@@ -21,6 +31,11 @@ IniHandler::~IniHandler() {
     userKeyMapList = nullptr;
 }
 
+/**
+  * @brief 初始化系统配置，检查本地配置文件完整性
+  * @param 无
+  * @retval 无
+  */
 void IniHandler::initSysIni() {
     QDir iniDir("./ini");
 
@@ -41,6 +56,11 @@ void IniHandler::initSysIni() {
 
 }
 
+/**
+  * @brief 加载系统配置文件
+  * @param 无
+  * @retval 无
+  */
 void IniHandler::loadConf() {
     QSettings productIni("./ini/product.ini", QSettings::IniFormat);
     QStringList groups = productIni.childGroups();
@@ -55,6 +75,11 @@ void IniHandler::loadConf() {
     }
 }
 
+/**
+  * @brief 保存用户配置文件
+  * @param 无
+  * @retval 无
+  */
 void IniHandler::saveUserConf() {
     if (userKeyMapList == nullptr) {
         return;
@@ -89,6 +114,11 @@ void IniHandler::saveUserConf() {
     userIni.endGroup();
 }
 
+/**
+  * @brief 加载用户配置文件，从本地读入内存
+  * @param pid 当前键盘PID
+  * @retval 无
+  */
 void IniHandler::loadUserConf(uint16_t pid) {
     if (userKeyMapList == nullptr) {
         userKeyMapList = new KeyMapList();
@@ -133,23 +163,48 @@ void IniHandler::loadUserConf(uint16_t pid) {
     userKeyMapList->setKeyMap(keyMap);
 }
 
+/**
+  * @brief 更新当前的用户键位映射表
+  * @param newDev 新的HID设备
+  * @retval 无
+  */
 void IniHandler::updateCurUserKeyMapList(HIDDevInterface *newDev) {
     loadUserConf(newDev->getProductId());
     emit userKeyMapListChanged(userKeyMapList);  // 发送用户键位映射表改变信号
 }
 
+/**
+  * @brief 获取产品列表
+  * @param 无
+  * @retval 返回指向产品列表的指针
+  */
 QList<Product *> *IniHandler::getProductList() const {
     return productList;
 }
 
+/**
+  * @brief 设置产品列表
+  * @param productList 指向产品列表的指针
+  * @retval 无
+  */
 void IniHandler::setProductList(QList<Product *> *productList) {
     IniHandler::productList = productList;
 }
 
+/**
+  * @brief 获取用户键位映射表
+  * @param 无
+  * @retval 返回指向用户键位映射表的指针
+  */
 KeyMapList *IniHandler::getUserKeyMapList() const {
     return userKeyMapList;
 }
 
+/**
+  * @brief 设置用户键位映射表
+  * @param productList 指向用户键位映射表的指针
+  * @retval 无
+  */
 void IniHandler::setUserKeyMapList(KeyMapList *userKeyMapList) {
     IniHandler::userKeyMapList = userKeyMapList;
 }

@@ -277,7 +277,7 @@ build KeyboardFactory_autogen/timestamp KeyboardFactory_autogen/mocs_compilation
 #############################################
 # Phony custom command for CMakeFiles\KeyboardFactory_autogen_timestamp_deps
 
-build CMakeFiles/KeyboardFactory_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/KeyboardFactory_autogen_timestamp_deps: phony C$:/Qt/6.3.1/mingw_64/./bin/moc.exe C$:/Qt/6.3.1/mingw_64/./bin/uic.exe
+build CMakeFiles/KeyboardFactory_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/KeyboardFactory_autogen_timestamp_deps: phony C$:/Qt/6.3.1/mingw_64/./bin/uic.exe C$:/Qt/6.3.1/mingw_64/./bin/moc.exe
 
 
 #############################################

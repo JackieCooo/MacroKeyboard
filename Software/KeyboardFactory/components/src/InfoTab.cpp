@@ -1,14 +1,29 @@
 #include "InfoTab.h"
 
+/**
+  * @brief 信息标签页类构造函数
+  * @param 无
+  * @retval 无
+  */
 InfoTab::InfoTab() {
     setupUI();
 }
 
+/**
+  * @brief 信息标签页类构造函数
+  * @param parent 父类
+  * @retval 无
+  */
 InfoTab::InfoTab(QWidget *parent) {
     this->setParent(parent);
     setupUI();
 }
 
+/**
+  * @brief 初始化UI
+  * @param 无
+  * @retval 无
+  */
 void InfoTab::setupUI() {
     gLayout = new QGridLayout(this);
     this->setLayout(gLayout);
@@ -30,6 +45,11 @@ void InfoTab::setupUI() {
     connect(GlobalEvent::getInstance(), SIGNAL(bridgeCurDevChanged(HIDDevInterface*)), this, SLOT(updateCurDevInfo(HIDDevInterface*)));
 }
 
+/**
+  * @brief 更新当前HID设备
+  * @param newDev 新的HID设备
+  * @retval 无
+  */
 void InfoTab::updateCurDevInfo(HIDDevInterface *newDev) {
     if (newDev == nullptr) {
 //        qDebug("newDev == nullptr");

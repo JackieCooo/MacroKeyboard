@@ -12,6 +12,10 @@
 #define MAX_INPUT_NUM 6  // 组合键最大键位数
 #define MAX_INPUT_ARR_SIZE (2 * MAX_INPUT_NUM)  // INPUT数组最大大小
 
+class KeyService;
+
+extern KeyService* keyService;
+
 class KeyService : public QObject{
 
     Q_OBJECT

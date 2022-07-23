@@ -1,14 +1,29 @@
 #include "TransferTab.h"
 
+/**
+  * @brief 传输面板类构造函数
+  * @param 无
+  * @retval 无
+  */
 TransferTab::TransferTab() {
     setupUI();
 }
 
+/**
+  * @brief 传输面板类构造函数
+  * @param parent 父类
+  * @retval 无
+  */
 TransferTab::TransferTab(QWidget* parent) {
     this->setParent(parent);
     setupUI();
 }
 
+/**
+  * @brief 初始化UI
+  * @param 无
+  * @retval 无
+  */
 void TransferTab::setupUI() {
     vLayout = new QVBoxLayout();
     this->setLayout(vLayout);
@@ -31,6 +46,11 @@ void TransferTab::setupUI() {
     connect(GlobalEvent::getInstance(), SIGNAL(bridgeHidDataReceived(uint8_t*)), this, SLOT(updateReceiveInfo(uint8_t*)));
 }
 
+/**
+  * @brief 更新接收信息
+  * @param buf 接收数据数组
+  * @retval 无
+  */
 void TransferTab::updateReceiveInfo(uint8_t *buf) {
     QString text;
     char tmpBuf[2];
