@@ -1,5 +1,0 @@
-C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/CMakeFiles/KeyboardFactory.dir
-C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/CMakeFiles/KeyboardFactory_autogen_timestamp_deps.dir
-C:/Users/Jackie/Projects/MacroKeyboard/Software/KeyboardFactory/cmake-build-debug/CMakeFiles/KeyboardFactory_autogen.dir

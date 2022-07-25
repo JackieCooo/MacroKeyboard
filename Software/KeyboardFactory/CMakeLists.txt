@@ -7,6 +7,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 set(CMAKE_PREFIX_PATH C:/Qt/6.3.1/mingw_64)  # 设置为自己的QT安装目录
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output)
 
 find_package(Qt6 COMPONENTS
         Core
@@ -66,4 +68,17 @@ if (WIN32)
                 "${QT_INSTALL_PATH}/bin/Qt6${QT_LIB}${DEBUG_SUFFIX}.dll"
                 "$<TARGET_FILE_DIR:${PROJECT_NAME}>")
     endforeach (QT_LIB)
+
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy
+            "${QT_INSTALL_PATH}/bin/libgcc_s_seh-1.dll"
+            "$<TARGET_FILE_DIR:${PROJECT_NAME}>")
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy
+            "${QT_INSTALL_PATH}/bin/libstdc++-6.dll"
+            "$<TARGET_FILE_DIR:${PROJECT_NAME}>")
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy
+            "${QT_INSTALL_PATH}/bin/libwinpthread-1.dll"
+            "$<TARGET_FILE_DIR:${PROJECT_NAME}>")
 endif ()
