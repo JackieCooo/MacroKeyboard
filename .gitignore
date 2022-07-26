@@ -6,3 +6,5 @@ Firmware/KeyboardController/MacroKeyboard V0.1 TestVersion/Objects/
 Software/KeyboardFactory/cmake-build-debug/
 
 Software/KeyboardFactory/cmake-build-release/
+
+Software/KeyboardFactory_V1.0/cmake-build-debug/
