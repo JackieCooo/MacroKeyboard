@@ -12,11 +12,11 @@ void SidePanel::setupUI() {
     vLayout = new QVBoxLayout(this);
     this->setLayout(vLayout);
 
-    keyboardBtn = new MenuBtn("键位设置", this);
+    keyboardBtn = new MenuIconBtn(this);
     keyboardBtn->setChecked(true);
     vLayout->addWidget(keyboardBtn);
 
-    settingBtn = new MenuBtn("系统设置", this);
+    settingBtn = new MenuIconBtn(this);
     vLayout->addWidget(settingBtn);
 
     spacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);

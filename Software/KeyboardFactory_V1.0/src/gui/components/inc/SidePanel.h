@@ -11,14 +11,15 @@
 #include <QColor>
 #include <QPen>
 
-#include "MenuBtn.h"
+#include "MenuTextBtn.h"
+#include "MenuIconBtn.h"
 
 class SidePanel : public QWidget {
 
 private:
     QVBoxLayout* vLayout = nullptr;
-    MenuBtn* keyboardBtn = nullptr;
-    MenuBtn* settingBtn = nullptr;
+    MenuIconBtn* keyboardBtn = nullptr;
+    MenuIconBtn* settingBtn = nullptr;
     QButtonGroup* buttonGroup = nullptr;
     QSpacerItem* spacer = nullptr;
 
