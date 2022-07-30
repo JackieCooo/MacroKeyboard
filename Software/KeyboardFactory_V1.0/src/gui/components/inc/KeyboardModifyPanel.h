@@ -2,6 +2,8 @@
 
 #include <QWidget>
 #include <QHBoxLayout>
+#include <QChar>
+#include <QString>
 
 #include "KeyboardLayout.h"
 #include "KeyBtn.h"

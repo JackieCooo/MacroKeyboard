@@ -15,7 +15,8 @@ void KeyboardModifyPanel::setupUI() {
 
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
-            auto* key = new KeyBtn(keyboardLayout);
+            QChar ch((3 * i + j + 1) + '0');
+            auto* key = new KeyBtn(keyboardLayout, QString(ch));
             keyboardLayout->addKeyBtn(*key, i, j);
         }
     }

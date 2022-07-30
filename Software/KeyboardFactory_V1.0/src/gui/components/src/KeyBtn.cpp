@@ -8,9 +8,14 @@ KeyBtn::KeyBtn(QWidget *parent) : QAbstractButton(parent) {
     setupUI();
 }
 
+KeyBtn::KeyBtn(QWidget *parent, const QString &text) : QAbstractButton(parent) {
+    this->setText(text);
+    setupUI();
+}
+
 void KeyBtn::setupUI() {
     this->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-    this->setFixedSize(60, 60);
+    this->setFixedSize(btnSize, btnSize);
     this->setCheckable(false);
 }
 
@@ -20,14 +25,41 @@ void KeyBtn::paintEvent(QPaintEvent *e) {
     QPen pen(Qt::PenStyle::NoPen);
 
     painter.setRenderHint(QPainter::Antialiasing);
+    painter.setRenderHint(QPainter::TextAntialiasing);
     painter.setPen(pen);
 
     brush.setColor(defaultColor);
     painter.setBrush(brush);
-    painter.drawRoundedRect(rect(), 3, 3);
+    painter.drawRoundedRect(rect(), borderRadius, borderRadius);
     brush.setColor(highlightColor);
     painter.setBrush(brush);
-    painter.drawRoundedRect(8, 3, QWidget::width() - 16, QWidget::height() - 17, 3, 3);
+    painter.drawRoundedRect(8, 3, btnSize - 16, btnSize - 17, borderRadius, borderRadius);
+
+    pen = QPen(Qt::PenStyle::SolidLine);
+    pen.setColor(textColor);
+    painter.setPen(pen);
+    painter.setFont(font);
+    painter.drawText(rect(), Qt::AlignCenter, text());
+}
+
+void KeyBtn::enterEvent(QEnterEvent *e) {
+    this->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+    QPropertyAnimation* animation = new QPropertyAnimation(this, "pos");
+    animation->setDuration(500);
+    animation->setStartValue(QPoint(this->x(), this->y()));
+    animation->setEndValue(QPoint(this->x(), this->y() - 5));
+    animation->setEasingCurve(QEasingCurve::InOutQuart);
+    animation->start(QAbstractAnimation::DeleteWhenStopped);
+}
+
+void KeyBtn::leaveEvent(QEvent *e) {
+    this->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
+    QPropertyAnimation* animation = new QPropertyAnimation(this, "pos");
+    animation->setDuration(500);
+    animation->setStartValue(QPoint(this->x(), this->y()));
+    animation->setEndValue(QPoint(this->x(), this->y() + 5));
+    animation->setEasingCurve(QEasingCurve::InOutQuart);
+    animation->start(QAbstractAnimation::DeleteWhenStopped);
 }
 
 int KeyBtn::getRow() const {
@@ -35,7 +67,7 @@ int KeyBtn::getRow() const {
 }
 
 void KeyBtn::setRow(int row) {
-    KeyBtn::row = row;
+    this->row = row;
 }
 
 int KeyBtn::getCol() const {
@@ -43,5 +75,5 @@ int KeyBtn::getCol() const {
 }
 
 void KeyBtn::setCol(int col) {
-    KeyBtn::col = col;
+    this->col = col;
 }
