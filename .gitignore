@@ -8,3 +8,5 @@ Software/KeyboardFactory/cmake-build-debug/
 Software/KeyboardFactory/cmake-build-release/
 
 Software/KeyboardFactory_V1.0/cmake-build-debug/
+
+Software/KeyboardFactory_V1.0/src/gui/psd/

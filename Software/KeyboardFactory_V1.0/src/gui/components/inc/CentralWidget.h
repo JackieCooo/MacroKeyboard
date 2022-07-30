@@ -8,12 +8,12 @@
 #include <QColor>
 
 #include "StyleStackWidget.h"
-#include "SidePanel.h"
+#include "Menu.h"
 
 class CentralWidget : public QWidget {
 
 private:
-    SidePanel* sidePanel = nullptr;
+    Menu* menu = nullptr;
     StyleStackWidget* styleStackWidget = nullptr;
     QHBoxLayout* hLayout = nullptr;
 

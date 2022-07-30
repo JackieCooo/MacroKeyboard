@@ -13,8 +13,8 @@ void CentralWidget::setupUI() {
     hLayout->setContentsMargins(0, 0, 0, 0);
     this->setLayout(hLayout);
 
-    sidePanel = new SidePanel(this);
-    hLayout->addWidget(sidePanel);
+    menu = new Menu(this);
+    hLayout->addWidget(menu);
 
     styleStackWidget = new StyleStackWidget(this);
     hLayout->addWidget(styleStackWidget);
