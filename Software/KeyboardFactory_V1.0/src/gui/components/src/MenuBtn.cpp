@@ -28,6 +28,7 @@ void MenuBtn::paintEvent(QPaintEvent *e) {
     QPen pen(Qt::PenStyle::SolidLine);
 
     painter.setRenderHint(QPainter::Antialiasing);
+    painter.setRenderHint(QPainter::LosslessImageRendering);
 
     if (isChecked()) {
         brush.setColor(selectedBgColor);

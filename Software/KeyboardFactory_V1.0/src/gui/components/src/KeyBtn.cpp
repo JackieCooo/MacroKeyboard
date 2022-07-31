@@ -39,7 +39,7 @@ void KeyBtn::paintEvent(QPaintEvent *e) {
     pen.setColor(textColor);
     painter.setPen(pen);
     painter.setFont(font);
-    painter.drawText(rect(), Qt::AlignCenter, text());
+    painter.drawText(8, 3, btnSize - 16, btnSize - 17, Qt::AlignCenter, text());
 }
 
 void KeyBtn::enterEvent(QEnterEvent *e) {

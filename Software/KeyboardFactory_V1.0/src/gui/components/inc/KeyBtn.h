@@ -21,7 +21,7 @@ private:
     QColor defaultColor = QColor(40, 40, 40);
     QColor highlightColor = QColor(70, 70, 70);
     QColor textColor = QColor(255, 255, 255);
-    QFont font = QFont("ROG Fonts", 16);
+    QFont font = QFont("ROG Fonts", 14);
     int row = -1;
     int col = -1;
     const int borderRadius = 3;
