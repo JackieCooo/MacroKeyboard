@@ -12,7 +12,6 @@ void KeyboardModifyPanel::setupUI() {
     hLayout = new QHBoxLayout(this);
 
     keyboardLayout = new KeyboardLayout(this, 300, 400);
-
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
             QChar ch((3 * i + j + 1) + '0');
@@ -21,8 +20,10 @@ void KeyboardModifyPanel::setupUI() {
         }
     }
     keyboardLayout->setLayoutMargin(10, 100, 10, 10);
-
     hLayout->addWidget(keyboardLayout);
+
+    keyMapModifyPanel = new KeyMapModifyPanel(this);
+    hLayout->addWidget(keyMapModifyPanel);
 
     this->setLayout(hLayout);
 }

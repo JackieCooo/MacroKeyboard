@@ -7,12 +7,14 @@
 
 #include "KeyboardLayout.h"
 #include "KeyBtn.h"
+#include "KeyMapModifyPanel.h"
 
 class KeyboardModifyPanel : public QWidget {
 
 private:
     KeyboardLayout* keyboardLayout = nullptr;
     QHBoxLayout* hLayout = nullptr;
+    KeyMapModifyPanel* keyMapModifyPanel = nullptr;
 
 public:
     KeyboardModifyPanel();
