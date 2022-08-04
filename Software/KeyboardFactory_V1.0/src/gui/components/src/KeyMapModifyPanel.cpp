@@ -17,11 +17,9 @@ void KeyMapModifyPanel::setupUI() {
     vLayout->addWidget(label);
 
     comboBox = new StyleComboBox(this);
-    comboBox->addItem("test1");
-    comboBox->addItem("test2");
-    comboBox->addItem("test3");
-    comboBox->addItem("test4");
-    comboBox->addItem("test5");
+    for (int i = 0; i < 15; ++i) {
+        comboBox->addItem(QString("test%1").arg(i));
+    }
     vLayout->addWidget(comboBox);
 
     spacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);

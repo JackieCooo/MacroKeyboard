@@ -12,7 +12,7 @@ void StyleComboBox::setupUI() {
     this->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     this->setFixedSize(200, 35);
 
-    popUp = new StyleComboBoxPopUp(this);
+    popUp = new StyleComboBoxPopUp();
 }
 
 void StyleComboBox::paintEvent(QPaintEvent *e) {
@@ -63,7 +63,7 @@ void StyleComboBox::paintEvent(QPaintEvent *e) {
     brush.setStyle(Qt::BrushStyle::NoBrush);
     painter.setBrush(brush);
     painter.setFont(font);
-    painter.drawText(8, 0, 150, QWidget::height(), Qt::AlignLeft | Qt::AlignVCenter, currentText());
+    painter.drawText(8, 0, 150, QWidget::height(), Qt::AlignLeft | Qt::AlignVCenter, getCurText());
 }
 
 void StyleComboBox::enterEvent(QEnterEvent *e) {
@@ -74,4 +74,42 @@ void StyleComboBox::enterEvent(QEnterEvent *e) {
 void StyleComboBox::leaveEvent(QEvent *e) {
     hovered = false;
     repaint();
+}
+
+void StyleComboBox::mouseReleaseEvent(QMouseEvent *event) {
+    if (popUp == nullptr) return;
+
+    popUp->showPopup();
+}
+
+void StyleComboBox::addItem(const QString &text) {
+    if (popUp == nullptr) return;
+
+    PopUpItem* popUpItem = new PopUpItem(popUp);
+    popUpItem->setText(text);
+//    connect(popUpItem, SIGNAL(clicked(QWidget*)), this, SLOT(onPopUpItemClicked(QWidget*)));
+    popUp->getVLayout()->addWidget(popUpItem);
+}
+
+const QString &StyleComboBox::getCurText() const {
+    return curText;
+}
+
+void StyleComboBox::setCurText(const QString &curText) {
+    this->curText = curText;
+}
+
+int StyleComboBox::getCurIndex() const {
+    return curIndex;
+}
+
+void StyleComboBox::setCurIndex(int curIndex) {
+    this->curIndex = curIndex;
+}
+
+void StyleComboBox::onPopUpItemClicked(QWidget *tar) {
+    int index = this->popUp->getVLayout()->indexOf(tar);
+    if (index == this->curIndex) return;
+
+
 }
