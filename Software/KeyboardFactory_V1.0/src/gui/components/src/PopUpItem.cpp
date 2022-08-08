@@ -26,6 +26,7 @@ void PopUpItem::paintEvent(QPaintEvent *e) {
         brush.setStyle(Qt::BrushStyle::SolidPattern);
         brush.setColor(hoverColor);
         painter.setBrush(brush);
+        painter.setPen(pen);
         painter.drawRect(rect());
     }
 

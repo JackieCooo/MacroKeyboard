@@ -2,10 +2,12 @@
 
 StyleComboBox::StyleComboBox() {
     setupUI();
+    setupListener();
 }
 
 StyleComboBox::StyleComboBox(QWidget *parent) : QWidget(parent) {
     setupUI();
+    setupListener();
 }
 
 void StyleComboBox::setupUI() {
@@ -13,6 +15,13 @@ void StyleComboBox::setupUI() {
     this->setFixedSize(200, 35);
 
     popUp = new StyleComboBoxPopUp();
+    popUp->setParentWidget(this);
+
+    popUpModel = new PopUpModel();
+}
+
+void StyleComboBox::setupListener() {
+    connect(popUpModel, SIGNAL(itemsChanged()), this, SLOT(updateCurrentItem()));
 }
 
 void StyleComboBox::paintEvent(QPaintEvent *e) {
@@ -82,13 +91,15 @@ void StyleComboBox::mouseReleaseEvent(QMouseEvent *event) {
     popUp->showPopup();
 }
 
-void StyleComboBox::addItem(const QString &text) {
+void StyleComboBox::addItem(const QString &text, const QVariant& userData) {
     if (popUp == nullptr) return;
 
     PopUpItem* popUpItem = new PopUpItem(popUp);
     popUpItem->setText(text);
-//    connect(popUpItem, SIGNAL(clicked(QWidget*)), this, SLOT(onPopUpItemClicked(QWidget*)));
+    connect(popUpItem, SIGNAL(clicked(QWidget*)), this, SLOT(onPopUpItemClicked(QWidget*)));
     popUp->getVLayout()->addWidget(popUpItem);
+
+    popUpModel->addItem(new PopUpItemModel(popUpItem, text, userData));
 }
 
 const QString &StyleComboBox::getCurText() const {
@@ -108,8 +119,35 @@ void StyleComboBox::setCurIndex(int curIndex) {
 }
 
 void StyleComboBox::onPopUpItemClicked(QWidget *tar) {
-    int index = this->popUp->getVLayout()->indexOf(tar);
-    if (index == this->curIndex) return;
+    int index = popUpModel->indexOf(tar);
+    if (index == curIndex) return;
 
+    auto curTar = popUpModel->itemOf(tar);
+    updateCurrentItem(curTar->getText(), index);
+}
 
+PopUpModel *StyleComboBox::getPopUpModel() const {
+    return popUpModel;
+}
+
+void StyleComboBox::setPopUpModel(PopUpModel *popUpModel) {
+    this->popUpModel = popUpModel;
+}
+
+void StyleComboBox::updateCurrentItem() {
+    this->curText = popUpModel->itemOf(0)->getText();
+    this->curIndex = 0;
+    repaint();
+
+    emit currentIndexChanged(curIndex);
+    emit currentTextChanged(curText);
+}
+
+void StyleComboBox::updateCurrentItem(const QString& text, int index) {
+    this->curText = text;
+    this->curIndex = index;
+    repaint();
+
+    emit currentIndexChanged(curIndex);
+    emit currentTextChanged(curText);
 }

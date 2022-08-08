@@ -9,6 +9,7 @@
 #include <QBrush>
 #include <QPen>
 #include <QScrollArea>
+#include <QPalette>
 
 #include "PopUpItem.h"
 
@@ -20,17 +21,17 @@ private:
     QVBoxLayout* vLayout = nullptr;
     QScrollArea* scrollArea = nullptr;
     QWidget* viewPort = nullptr;
-    QWidget* parent = nullptr;
+    QWidget* parentWidget = nullptr;
 
-    QColor bgColor = QColor(60, 60, 60);
+    QColor bgColor = QColor(70, 70, 70);
 
 public:
     StyleComboBoxPopUp();
     explicit StyleComboBoxPopUp(QWidget* parent);
     [[nodiscard]] QVBoxLayout *getVLayout() const;
     void setVLayout(QVBoxLayout *vLayout);
-    [[nodiscard]] QWidget *getParent() const;
-    void setParent1(QWidget *parent);
+    [[nodiscard]] QWidget *getParentWidget() const;
+    void setParentWidget(QWidget *parent);
 
 protected:
     void paintEvent(QPaintEvent* e) override;

@@ -19,7 +19,7 @@ class PopUpItem : public QWidget {
 private:
     QColor hoverColor = QColor(64, 158, 255);
     QColor defaultTextColor = QColor(255, 255, 255);
-    QColor hoverTextColor = QColor(60, 60, 60);
+    QColor hoverTextColor = QColor(70, 70, 70);
     QFont font = QFont("微软雅黑", 12);
     QString text;
     bool hovered = false;

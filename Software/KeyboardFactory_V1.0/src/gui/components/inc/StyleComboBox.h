@@ -16,11 +16,15 @@
 
 #include "StyleComboBoxPopUp.h"
 #include "PopUpItem.h"
+#include "PopUpModel.h"
 
 class StyleComboBox : public QWidget {
 
+    Q_OBJECT
+
 private:
     StyleComboBoxPopUp* popUp = nullptr;
+    PopUpModel* popUpModel = nullptr;
 
     QColor borderColor = QColor(200, 200, 200);
     QColor highlightColor = QColor(255, 255, 255);
@@ -41,11 +45,13 @@ private:
 public:
     StyleComboBox();
     explicit StyleComboBox(QWidget* parent);
-    void addItem(const QString& text);
+    void addItem(const QString& text, const QVariant& userData = QVariant());
     [[nodiscard]] const QString &getCurText() const;
     void setCurText(const QString &curText);
     [[nodiscard]] int getCurIndex() const;
     void setCurIndex(int curIndex);
+    [[nodiscard]] PopUpModel *getPopUpModel() const;
+    void setPopUpModel(PopUpModel *popUpModel);
 
 protected:
     void paintEvent(QPaintEvent* e) override;
@@ -55,6 +61,7 @@ protected:
 
 private:
     void setupUI();
+    void setupListener();
 
 signals:
     void currentTextChanged(const QString& text);
@@ -62,5 +69,7 @@ signals:
 
 private slots:
     void onPopUpItemClicked(QWidget* tar);
+    void updateCurrentItem();
+    void updateCurrentItem(const QString& text, int index);
 
 };

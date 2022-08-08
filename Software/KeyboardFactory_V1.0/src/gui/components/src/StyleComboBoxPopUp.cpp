@@ -18,8 +18,13 @@ void StyleComboBoxPopUp::setupUI() {
     scrollArea->setWidgetResizable(true);
     scrollArea->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     scrollArea->setFixedSize(200, 200);
-    scrollArea->setFrameStyle(QFrame::NoFrame);
-    scrollArea->setBackgroundRole(QPalette::AlternateBase);
+    scrollArea->setFrameStyle(QFrame::NoFrame | QFrame::Plain);
+    scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    scrollArea->setWindowFlags(Qt::FramelessWindowHint);
+    QPalette palette = scrollArea->palette();
+    palette.setBrush(QPalette::Window, Qt::transparent);
+    scrollArea->setPalette(palette);
 
     viewPort = new QWidget(this);
     viewPort->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
@@ -43,7 +48,10 @@ void StyleComboBoxPopUp::setVLayout(QVBoxLayout *vLayout) {
 }
 
 void StyleComboBoxPopUp::showPopup() {
+    if (this->isVisible()) return;
+
     this->show();
+    this->move(parentWidget->mapToGlobal(parentWidget->rect().bottomLeft()));
 }
 
 void StyleComboBoxPopUp::hidePopup() {
@@ -53,17 +61,19 @@ void StyleComboBoxPopUp::hidePopup() {
 void StyleComboBoxPopUp::paintEvent(QPaintEvent *e) {
     QPainter painter(this);
     QBrush brush(Qt::BrushStyle::NoBrush);
+    QPen pen(Qt::PenStyle::NoPen);
 
     brush.setColor(bgColor);
     brush.setStyle(Qt::BrushStyle::SolidPattern);
     painter.setBrush(brush);
+    painter.setPen(pen);
     painter.drawRect(rect());
 }
 
-QWidget *StyleComboBoxPopUp::getParent() const {
-    return parent;
+QWidget *StyleComboBoxPopUp::getParentWidget() const {
+    return this->parentWidget;
 }
 
-void StyleComboBoxPopUp::setParent1(QWidget *parent) {
-    this->parent = parent;
+void StyleComboBoxPopUp::setParentWidget(QWidget *parent) {
+    this->parentWidget = parent;
 }
